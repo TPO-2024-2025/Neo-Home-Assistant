@@ -11,13 +11,22 @@ This integration allows you to control your NEO Smartbox device through Home Ass
 
 ## Installation
 
-This integration is 
+This integration is available through HACS (Home Assistant Community Store). To install:
+
+1. Open HACS in Home Assistant
+2. In the top right corner, click on the three dots and select "Custom repositories".
+3. Add the repository URL: `https://github.com/TPO-2024-2025/Neo-Home-Assistant`.
+4. Select "Integration" as the type.
+5. Click "Add" to save the repository.
+6. Search for "NEO Smartbox" in HACS and install the integration.
+7. Restart Home Assistant to apply the changes.
 
 ## Configuration
 
-1. Go to **Configuration** > **Integrations** in Home Assistant
-2. Click "Add Integration" and search for "NEO Smartbox"
-3. Follow the steps to add your device using your API key
+1. Go to **Settings** > **Devices & services**.
+2. Click on "Add Integration" and search for "NEO Smartbox".
+3. Follow the prompts to set up the integration, including entering your NEO Smartbox API key. You can find your API key here: [https://neo.io/auth/home-assistant/api-key](https://neo.io/auth/home-assistant/api-key).
+4. Once the integration is set up, you will see your NEO Smartbox device listed in Home Assistant.
 
 ## Using the Remote Control Card
 
@@ -61,11 +70,11 @@ The integration provides the following services:
 
 Send a remote key action to your NEO Smartbox.
 
-| Service Data | Description |
-|--------------|-------------|
-| `device_id` | The ID of the device to control |
-| `action` | The action to perform (from the list of available actions) |
-| `long_press` | Whether to perform a long press (default: false) |
+| Service Data | Description                                                |
+| ------------ | ---------------------------------------------------------- |
+| `device_id`  | The ID of the device to control                            |
+| `action`     | The action to perform (from the list of available actions) |
+| `long_press` | Whether to perform a long press (default: false)           |
 
 Example service call:
 
