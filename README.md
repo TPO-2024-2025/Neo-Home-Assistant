@@ -11,7 +11,7 @@ This integration allows you to control your NEO Smartbox device through Home Ass
 
 ## Installation
 
-This integration is built into Home Assistant Core. No additional installation is required.
+This integration is 
 
 ## Configuration
 

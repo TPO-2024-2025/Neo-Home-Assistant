@@ -5,10 +5,12 @@
   "codeowners": ["@ttisak"],
   "config_flow": true,
   "dependencies": ["http"],
-  "documentation": "https://www.home-assistant.io/integrations/neo_smartbox",
+  "documentation": "https://github.com/TPO-2024-2025/Neo-Home-Assistant",
   "integration_type": "hub",
   "iot_class": "cloud_polling",
   "quality_scale": "bronze",
   "requirements": [],
-  "single_config_entry": true
+  "issue_tracker": "https://github.com/TPO-2024-2025/Neo-Home-Assistant/issues",
+  "single_config_entry": true,
+  "version": "0.1.0"
 }
