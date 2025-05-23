@@ -1,0 +1,112 @@
+{
+  "device_automation": {
+    "action_type": {
+      "navigate_to": "Navigate to ...",
+      "navigate_to_live_channel": "Navigate to live channel ...",
+      "power": "Power on/off the device",
+      "rewind": "Rewind media",
+      "play_pause": "Play or pause media",
+      "forward": "Fast forward media",
+      "up": "Navigate up",
+      "down": "Navigate down",
+      "left": "Navigate left",
+      "right": "Navigate right",
+      "ok": "Select (OK)",
+      "back": "Go back",
+      "home": "Return to home screen",
+      "menu": "Open guide",
+      "volume_down": "Decrease volume",
+      "volume_mute": "Mute/unmute audio",
+      "volume_up": "Increase volume",
+      "channel_up": "Next channel",
+      "channel_down": "Previous channel"
+    },
+    "extra_fields": {
+      "long_press": "Long press",
+      "destination": "Destination",
+      "channel_id": "Channel"
+    }
+  },
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to NEO Smartbox",
+        "description": "Enter your NEO Smartbox API Key",
+        "data": {
+          "api_key": "API Key"
+        },
+        "data_description": {
+          "api_key": "Your NEO Smartbox API Key"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "unknown": "[%key:common::config_flow::error::unknown%]",
+      "no_devices_found": "No NEO Smartbox devices found on your account"
+    },
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    }
+  },
+  "selector": {
+    "remote_key_actions": {
+      "options": {
+        "power": "Power on/off the device",
+        "rewind": "Rewind media",
+        "play_pause": "Play or pause media",
+        "forward": "Fast forward media",
+        "up": "Navigate up",
+        "down": "Navigate down",
+        "left": "Navigate left",
+        "right": "Navigate right",
+        "ok": "Select (OK)",
+        "back": "Go back",
+        "home": "Return to home screen",
+        "menu": "Open guide",
+        "volume_down": "Decrease volume",
+        "volume_mute": "Mute/unmute audio",
+        "volume_up": "Increase volume",
+        "channel_up": "Next channel",
+        "channel_down": "Previous channel"
+      }
+    }
+  },
+  "services": {
+    "remote_key_action": {
+      "name": "Remote Key Action",
+      "description": "Send a remote key action to the NEO Smartbox.",
+      "fields": {
+        "action": {
+          "name": "Action",
+          "description": "The action to perform on the NEO Smartbox."
+        },
+        "long_press": {
+          "name": "Long press",
+          "description": "Whether to perform a long press."
+        }
+      }
+    },
+    "navigate_to_live_channel": {
+      "name": "Navigate to Live Channel",
+      "description": "Navigate to a specific live TV channel",
+      "fields": {
+        "channel_id": {
+          "name": "Channel",
+          "description": "The channel to navigate to."
+        }
+      }
+    },
+    "navigate_to_custom_action": {
+      "name": "Navigate to Custom Action",
+      "description": "Navigate to a specific app or action",
+      "fields": {
+        "action": {
+          "name": "Action",
+          "description": "Custom action path to navigate to"
+        }
+      }
+    }
+  }
+}

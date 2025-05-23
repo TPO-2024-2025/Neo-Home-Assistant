@@ -1,0 +1,65 @@
+remote_key_action:
+  target:
+    entity:
+      integration: neo_smartbox
+      domain: remote
+    device:
+      integration: neo_smartbox
+  fields:
+    action:
+      required: true
+      example: Volume Up
+      selector:
+        select:
+          translation_key: "remote_key_actions"
+          options:
+            - power
+            - rewind
+            - play_pause
+            - forward
+            - up
+            - down
+            - left
+            - right
+            - ok
+            - back
+            - home
+            - menu
+            - volume_down
+            - volume_mute
+            - volume_up
+            - channel_up
+            - channel_down
+    long_press:
+      required: true
+      default: false
+      selector:
+        boolean:
+
+navigate_to_live_channel:
+  target:
+    entity:
+      integration: neo_smartbox
+      domain: remote
+    device:
+      integration: neo_smartbox
+  fields:
+    channel_id:
+      required: true
+      example: "POPTV"
+      selector:
+        text:
+
+navigate_to_custom_action:
+  target:
+    entity:
+      integration: neo_smartbox
+      domain: remote
+    device:
+      integration: neo_smartbox
+  fields:
+    action:
+      required: true
+      example: "app://player/livetv/id/POPTV"
+      selector:
+        text:
